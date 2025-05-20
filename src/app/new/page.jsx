@@ -33,7 +33,7 @@ function NewPage({ idTasks }) {
       });
       const data = await response.json();
     } else {
-      const response = await fetch('/api/tasks', {
+      const response = await fetch('/api/tasks/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
